@@ -52,9 +52,6 @@ export default function App() {
   });
 };
 
-
-
-
   const filteredFiles = myFiles
     .filter(file => file.path.slice(0, filePath.length) === filePath)
     .filter(file => file.name.toLowerCase().includes(searchQuery.toLowerCase()));
@@ -63,10 +60,6 @@ export default function App() {
 
   const handleSortByChange = (event) => {
     setSortBy(event.target.value);
-  };
-
-  const handleSortOrderChange = (event) => {
-    setSortOrder(event.target.value);
   };
  
  var barChartOptions = {
